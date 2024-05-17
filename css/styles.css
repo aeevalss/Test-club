@@ -750,12 +750,21 @@ td {
   border-radius: 62px;
   transition: all 0.3s ease;
 }
-.player__more:hover {
-  cursor: pointer;
-  color: #fff;
-  background: rgb(48, 87, 162);
-}
 
+@media (hover: hover) {
+  .player__more:hover {
+    cursor: pointer;
+    color: #fff;
+    background: rgb(48, 87, 162);
+  }
+}
+@media (hover: none) {
+  .player__more:active {
+    cursor: pointer;
+    color: #fff;
+    background: rgb(48, 87, 162);
+  }
+}
 @media screen and (max-width: 768px) {
   .players-container {
     margin-top: 120px;
